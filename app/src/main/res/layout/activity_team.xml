@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_team"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.khusika.konsep.TeamActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.blunderer.materialdesignlibrary.views.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:layout_marginBottom="10dp"
+        app:mdl_title="Farizcha Octaviana Nofaria"
+        app:mdl_description="CEO - Creator"
+        app:mdl_imagePosition="top"
+        app:mdl_image="@drawable/card_on"/>
+
+    <com.blunderer.materialdesignlibrary.views.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:mdl_title="Khusika Dhamar Gusti"
+        app:mdl_description="Android Developer - Designer"
+        app:mdl_imagePosition="top"
+        app:mdl_image="@drawable/card_khus"/>
+</LinearLayout>
