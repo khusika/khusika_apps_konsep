@@ -72,13 +72,13 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, TeamActivity.class));
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
-            return true;
+            return false;
 
         } else if (id == R.id.nav_about) {
             startActivity(new Intent(this, AboutActivity.class));
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
-            return true;
+            return false;
 
         }
         return false;
