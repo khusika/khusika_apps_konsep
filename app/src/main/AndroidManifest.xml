@@ -21,10 +21,12 @@
 
         <activity
             android:name=".TeamActivity"
-            android:label="Team" />
+            android:label="Meet The Team !"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name=".AboutActivity"
-            android:label="About" />
+            android:label="About Us"
+            android:theme="@style/AppTheme2" />
     </application>
 
 </manifest>

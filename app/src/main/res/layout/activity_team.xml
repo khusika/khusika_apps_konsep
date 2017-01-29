@@ -6,27 +6,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.khusika.konsep.TeamActivity">
 
-    <com.blunderer.materialdesignlibrary.views.CardView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/team_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:mdl_title="Farizcha Octaviana Nofaria"
-        app:mdl_description="CEO - Creator"
-        app:mdl_imagePosition="top"
-        app:mdl_image="@drawable/card_on"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
-    <com.blunderer.materialdesignlibrary.views.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:mdl_title="Khusika Dhamar Gusti"
-        app:mdl_description="Android Developer - Designer"
-        app:mdl_imagePosition="top"
-        app:mdl_image="@drawable/card_khus"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <com.blunderer.materialdesignlibrary.views.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:mdl_title="Farizcha Octaviana Nofaria"
+            app:mdl_description="CEO - Creator"
+            app:mdl_imagePosition="top"
+            app:mdl_image="@drawable/card_on"/>
+
+        <com.blunderer.materialdesignlibrary.views.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:mdl_title="Khusika Dhamar Gusti"
+            app:mdl_description="Android Developer - Designer"
+            app:mdl_imagePosition="top"
+            app:mdl_image="@drawable/card_khus"/>
+    </LinearLayout>
 </LinearLayout>
