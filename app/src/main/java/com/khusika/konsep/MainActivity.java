@@ -14,21 +14,26 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private ActionBarDrawerToggle toggle;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+        toggle = new ActionBarDrawerToggle(
+                this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
@@ -57,29 +62,31 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
+    public boolean onNavigationItemSelected(MenuItem menuItem) {
 
-        if (id == R.id.nav_home) {
-            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-            drawer.closeDrawer(GravityCompat.START);
-            return true;
+        switch(menuItem.getItemId()) {
+            case R.id.nav_home:
+                if(!menuItem.isChecked()) {
+                    menuItem.setChecked(true);
+                }
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            case R.id.nav_team:
+                if(!menuItem.isChecked()) {
+                    menuItem.setChecked(false);
+                    startActivity(new Intent(this, TeamActivity.class));
+                }
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return false;
 
-        } else if (id == R.id.nav_team) {
-            startActivity(new Intent(this, TeamActivity.class));
-            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-            drawer.closeDrawer(GravityCompat.START);
-            return false;
-
-        } else if (id == R.id.nav_about) {
-            startActivity(new Intent(this, AboutActivity.class));
-            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-            drawer.closeDrawer(GravityCompat.START);
-            return false;
-
+            case R.id.nav_about:
+                if(!menuItem.isChecked()) {
+                    menuItem.setChecked(false);
+                    startActivity(new Intent(this, AboutActivity.class));
+                }
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return false;
         }
         return false;
     }
