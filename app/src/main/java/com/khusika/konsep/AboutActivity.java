@@ -21,6 +21,7 @@ public class AboutActivity extends AppCompatActivity {
     }
 
     private void setupToolbar(){
+        toolbar.setTitle(getString(R.string.about_title));
         setSupportActionBar(toolbar);
         if (getSupportActionBar() !=null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);

@@ -2,6 +2,8 @@
     <string name="app_name">Konsep</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about_title">About Us</string>
+    <string name="team_title">Meet The Team !</string>
     <string name="text_about">This is a sample app</string>
 
     <string name="google_license">

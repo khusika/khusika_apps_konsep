@@ -21,6 +21,7 @@ public class TeamActivity extends AppCompatActivity {
     }
 
     private void setupToolbar(){
+        toolbar.setTitle(getString(R.string.team_title));
         setSupportActionBar(toolbar);
         if (getSupportActionBar() !=null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
