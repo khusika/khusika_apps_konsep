@@ -17,6 +17,10 @@ public class TeamActivity extends AppCompatActivity {
         setContentView(R.layout.activity_team);
 
         toolbar = (Toolbar) findViewById(R.id.team_toolbar);
+        setupToolbar();
+    }
+
+    private void setupToolbar(){
         setSupportActionBar(toolbar);
         if (getSupportActionBar() !=null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -31,5 +35,4 @@ public class TeamActivity extends AppCompatActivity {
             }
         });
     }
-
 }
