@@ -1,4 +1,4 @@
-package com.khusika.konsep;
+package com.khusika.smartfish;
 
 import android.content.Intent;
 import android.os.Bundle;
