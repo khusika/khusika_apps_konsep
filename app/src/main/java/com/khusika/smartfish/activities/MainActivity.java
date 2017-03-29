@@ -1,4 +1,4 @@
-package com.khusika.smartfish;
+package com.khusika.smartfish.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.khusika.smartfish.R;
 import com.khusika.smartfish.fragments.MainFragment;
 
 public class MainActivity extends AppCompatActivity

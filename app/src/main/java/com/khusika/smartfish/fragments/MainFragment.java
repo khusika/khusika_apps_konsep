@@ -14,7 +14,7 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
-import com.khusika.smartfish.MainActivity;
+import com.khusika.smartfish.activities.MainActivity;
 import com.khusika.smartfish.R;
 
 import java.util.HashMap;
