@@ -17,4 +17,8 @@
         and limitations under the License.
 
     </string>
+    <!-- Login Activity -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
 </resources>
