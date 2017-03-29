@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,
                 new MainFragment(),FRAGMENT_MAIN_TAG).commit();
 
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 
     @Override

@@ -20,6 +20,12 @@
         </activity>
 
         <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
             android:name="com.khusika.smartfish.activities.TeamActivity"
             android:theme="@style/AppTheme2" />
         <activity
