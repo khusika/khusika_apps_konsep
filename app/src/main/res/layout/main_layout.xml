@@ -49,20 +49,24 @@
                 android:scaleType="fitXY"
                 >
                 <ImageView
+                    android:id="@+id/home_tpi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_add"
+                    android:src="@drawable/home_tpi"
                     android:layout_margin="25dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true"/>
                 <TextView
+                    android:layout_alignRight="@+id/home_tpi"
+                    android:layout_alignLeft="@+id/home_tpi"
+                    android:layout_below="@+id/home_tpi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:textAlignment="center"
                     android:layout_marginBottom="5dp"
-                    android:text="TEST"
+                    android:text="TPI"
                     android:textStyle="bold"/>
 
             </com.khusika.smartfish.adapters.SquareCardView>
@@ -73,20 +77,24 @@
                 android:scaleType="fitXY"
                 >
                 <ImageView
+                    android:id="@+id/home_market"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_add"
+                    android:src="@drawable/home_market"
                     android:layout_margin="25dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true"/>
                 <TextView
+                    android:layout_alignRight="@+id/home_market"
+                    android:layout_alignLeft="@+id/home_market"
+                    android:layout_below="@+id/home_market"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:textAlignment="center"
                     android:layout_marginBottom="5dp"
-                    android:text="TEST"
+                    android:text="Fishmart"
                     android:textStyle="bold"/>
 
             </com.khusika.smartfish.adapters.SquareCardView>
@@ -103,20 +111,24 @@
                 android:scaleType="fitXY"
                 >
                 <ImageView
+                    android:id="@+id/home_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_add"
+                    android:src="@drawable/home_profile"
                     android:layout_margin="25dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true"/>
                 <TextView
+                    android:layout_alignRight="@+id/home_profile"
+                    android:layout_alignLeft="@+id/home_profile"
+                    android:layout_below="@+id/home_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:textAlignment="center"
                     android:layout_marginBottom="5dp"
-                    android:text="TEST"
+                    android:text="Profile"
                     android:textStyle="bold"/>
 
             </com.khusika.smartfish.adapters.SquareCardView>
@@ -127,20 +139,24 @@
                 android:scaleType="fitXY"
                 >
                 <ImageView
+                    android:id="@+id/home_faq"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_add"
+                    android:src="@drawable/home_faq"
                     android:layout_margin="25dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true"/>
                 <TextView
+                    android:layout_alignRight="@+id/home_faq"
+                    android:layout_alignLeft="@+id/home_faq"
+                    android:layout_below="@+id/home_faq"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:textAlignment="center"
                     android:layout_marginBottom="5dp"
-                    android:text="TEST"
+                    android:text="FAQ"
                     android:textStyle="bold"/>
 
             </com.khusika.smartfish.adapters.SquareCardView>
