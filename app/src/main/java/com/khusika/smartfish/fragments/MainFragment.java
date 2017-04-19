@@ -51,9 +51,9 @@ public class MainFragment extends Fragment implements ViewPagerEx.OnPageChangeLi
         mDemoSlider = (SliderLayout)view.findViewById(R.id.slider);
 
         HashMap<String,Integer> file_maps = new HashMap<>();
-        file_maps.put("1",R.color.colorPrimary);
-        file_maps.put("2",R.color.colorAccent);
-        file_maps.put("3",R.color.colorPrimaryDark);
+        file_maps.put("SMARTFISH",R.drawable.slider_1);
+        file_maps.put("TPI Sedati",R.drawable.slider_2);
+        file_maps.put("Nelayan Sedati",R.drawable.slider_3);
 
         for(String name : file_maps.keySet()){
             TextSliderView textSliderView = new TextSliderView(getActivity());
