@@ -1,6 +1,7 @@
 package com.khusika.smartfish.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
@@ -8,14 +9,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
-import com.khusika.smartfish.activities.MainActivity;
 import com.khusika.smartfish.R;
+import com.khusika.smartfish.activities.MainActivity;
+import com.khusika.smartfish.activities.ProfileActivity;
 
 import java.util.HashMap;
 
@@ -28,6 +31,7 @@ public class MainFragment extends Fragment implements ViewPagerEx.OnPageChangeLi
     private MainActivity main;
     private Toolbar toolbar;
     private SliderLayout mDemoSlider;
+    private ImageView imageView;
 
     public MainFragment() {
         // Required empty public constructor
@@ -72,6 +76,14 @@ public class MainFragment extends Fragment implements ViewPagerEx.OnPageChangeLi
         mDemoSlider.setCustomAnimation(new DescriptionAnimation());
         mDemoSlider.setDuration(4000);
         mDemoSlider.addOnPageChangeListener(this);
+
+        imageView = (ImageView)view.findViewById(R.id.home_profile);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent profile = new Intent(view.getContext(), ProfileActivity.class);
+                startActivity(profile);
+            }
+        });
 
         return view;
     }
