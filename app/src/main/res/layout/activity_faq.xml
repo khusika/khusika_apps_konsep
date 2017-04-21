@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_team"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,5 +17,44 @@
         android:elevation="4dp"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
+    <com.khusika.smartfish.expandable.ExpandableLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandable:el_headerLayout="@layout/view_header"
+        expandable:el_contentLayout="@layout/view_content"
+        android:background="#e74c3c"/>
+
+    <com.khusika.smartfish.expandable.ExpandableLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandable:el_headerLayout="@layout/view_header"
+        expandable:el_contentLayout="@layout/view_content"
+        android:background="#e74c3c"/>
+
+    <com.khusika.smartfish.expandable.ExpandableLayout
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandable:el_headerLayout="@layout/view_header"
+        expandable:el_contentLayout="@layout/view_content"
+        android:background="#e74c3c"/>
+
+    <com.khusika.smartfish.expandable.ExpandableLayout
+        android:id="@+id/fourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandable:el_headerLayout="@layout/view_header"
+        expandable:el_contentLayout="@layout/view_content"
+        android:background="#e74c3c"/>
+
+    <com.khusika.smartfish.expandable.ExpandableLayout
+        android:id="@+id/fifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandable:el_headerLayout="@layout/view_header"
+        expandable:el_contentLayout="@layout/view_content"
+        android:background="#e74c3c"/>
 
 </LinearLayout>
