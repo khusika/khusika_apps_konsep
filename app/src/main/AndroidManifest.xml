@@ -26,7 +26,16 @@
             android:name="com.khusika.smartfish.activities.AboutActivity"
             android:theme="@style/AppTheme2" />
         <activity
+            android:name="com.khusika.smartfish.activities.TpiActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="com.khusika.smartfish.activities.FishmartActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
             android:name="com.khusika.smartfish.activities.ProfileActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="com.khusika.smartfish.activities.FaqActivity"
             android:theme="@style/AppTheme2" />
     </application>
 

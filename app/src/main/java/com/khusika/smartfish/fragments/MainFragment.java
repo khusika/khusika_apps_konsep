@@ -17,8 +17,11 @@ import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.khusika.smartfish.R;
+import com.khusika.smartfish.activities.FaqActivity;
+import com.khusika.smartfish.activities.FishmartActivity;
 import com.khusika.smartfish.activities.MainActivity;
 import com.khusika.smartfish.activities.ProfileActivity;
+import com.khusika.smartfish.activities.TpiActivity;
 
 import java.util.HashMap;
 
@@ -79,11 +82,32 @@ public class MainFragment extends Fragment implements ViewPagerEx.OnPageChangeLi
         mDemoSlider.setDuration(4000);
         mDemoSlider.addOnPageChangeListener(this);
 
+        imageView = (ImageView)view.findViewById(R.id.home_tpi);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent tpi = new Intent(view.getContext(), TpiActivity.class);
+                startActivity(tpi);
+            }
+        });
+        imageView = (ImageView)view.findViewById(R.id.home_market);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent market = new Intent(view.getContext(), FishmartActivity.class);
+                startActivity(market);
+            }
+        });
         imageView = (ImageView)view.findViewById(R.id.home_profile);
         imageView.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent profile = new Intent(view.getContext(), ProfileActivity.class);
                 startActivity(profile);
+            }
+        });
+        imageView = (ImageView)view.findViewById(R.id.home_faq);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent faq = new Intent(view.getContext(), FaqActivity.class);
+                startActivity(faq);
             }
         });
 
