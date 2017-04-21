@@ -55,6 +55,12 @@
     <string name="login_button">Login</string>
 
     <!-- FishMart Layout. -->
+    <string name="TpiLokal">lokal</string>
+    <string name="TpiNasional">Nasional</string>
+    <string name="TpiInternasional">Internasional</string>
+
+
+    <!-- FishMart Layout. -->
     <string name="FishmartFish">Hasil Laut</string>
     <string name="FishmartTools">Peralatan</string>
     <string name="ezreal">Ezreal – the Prodigal Explorer </string>
